@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      p {
+        color: blue;
+      }
+
+      .para {
+        color: orange;
+      }
+
+      #para-id {
+        color: green;
+      }
+    </style>
+  </head>
+  <body>
+    <p id="para-id" style="color:red;" class="para">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, id quam
+      consequuntur rerum maiores iusto blanditiis, ea voluptates cumque, maxime
+      similique nobis? Nisi aliquid velit asperiores aut omnis vero voluptas!
+    </p>
+
+    <!--We can see here that same paragraph is being styled using 3 differemt colors. 
+        The color property in each selectors are clashing. So specficity tells you which selector 
+        will get more weightage if the properties are clashing?
+        You can style an element in 5 ways where specificity works:
+        1. tag selectors
+        2. class selector
+        3. id selector
+        4. inline CSS
+
+        The order in which speicificity of selectors works is given below, starting from selector with
+        highest specificity to lowest specificity
+        1. style attribute/inline CSS
+        2. ID
+        3. Class/pseudo-class
+        4. tag
+
+        In the code <p> tag, if you remove style attribute, the color of text will change from red to 
+        green. Then if you remove id="para-id", the color of text will change to orange. And if you remove
+        class="para", then color of text will chnage to Blue
+    -->
+  </body>
+</html>

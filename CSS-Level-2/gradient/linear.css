@@ -1,0 +1,120 @@
+/*In box2, we have applied linear gradient using background-image: linear-gradient(to top,red,pink).
+It means that the color will smoothly shift from red to pink from direction: bottom to top.
+*/
+.box2{
+    border: 1px solid black;
+    height: 200px;
+    width: 150px;
+    margin-bottom: 30px;
+    background-image: linear-gradient(to top,red,pink);
+}
+
+/*In box3, we have applied linear gradient using background-image: linear-gradient(to right,white,blue).
+It means that the color will smoothly shift from white to blue from direction: left to right.
+*/
+.box3{
+    border: 1px solid black;
+    height: 200px;
+    width: 150px;
+    margin-bottom: 30px;
+    background-image: linear-gradient(to right,white,blue);
+}
+
+/*In box1, we have applied linear gradient using background-image: linear-gradient(to left,magenta,chocolate);
+It means that the color will smoothly shift from magenta to chcocolate from direction: right to left.
+*/
+.box1{
+    border: 1px solid black;
+    height: 200px;
+    width: 150px;
+    margin-bottom: 30px;
+    background-image: linear-gradient(to left,magenta,chocolate);
+}
+
+/*In box4, we have applied linear gradient using background-image: linear-gradient(red,green).
+It means that the color will smoothly shift from yellow to green from direction: top to bottom.
+Top to Bottom is the defaut direction. Notice that we have not passed 1st arg to liner-gradient().
+We have just passed yellow and green. So by default it will take "to top" as 1st argument.*/
+
+.box4{
+    border: 1px solid black;
+    height: 200px;
+    width: 150px;
+    margin-bottom: 30px;
+    background-image: linear-gradient(yellow,green);
+}
+
+/*You can also go DIAGONALLY*/
+
+/*In box5, we have applied linear gradient using background-image: linear-gradient(to bottom right,red,blue);
+It means that the color will smoothly shift from red to blue in the DIGONAL direction:
+from TOP LEFT to BOTTOM RIGHT.
+*/
+.box5{
+    border: 1px solid black;
+    height: 200px;
+    width: 150px;
+    margin-bottom: 30px;
+    color: white;
+    background-image: linear-gradient(to bottom right,red,blue);
+}
+
+/*In box6, we have applied linear gradient using background-image: linear-gradient(to bottom, green,blue);
+It means that the color will smoothly shift from green to blue in the DIGONAL direction:
+from TOP RIGHT to BOTTOM LEFT.
+*/
+.box6{
+    border: 1px solid black;
+    height: 200px;
+    width: 150px;
+    margin-bottom: 30px;
+    background-image: linear-gradient(to bottom left,green,blue);
+}
+
+/*In box7, we have applied linear gradient using background-image: linear-gradient(to top left,red,aqua);
+It means that the color will smoothly shift from red to aqua in the DIGONAL direction:
+from BOTTOM RIGHT to TOP LEFT.
+*/
+.box7{
+    border: 1px solid black;
+    height: 200px;
+    width: 150px;
+    margin-bottom: 30px;
+    background-image: linear-gradient(to top left,red,aqua);
+}
+
+/*In box8, we have applied linear gradient using background-image: linear-gradient(to top right,purple,yellow);
+It means that the color will smoothly shift from purple to yellow in the DIGONAL direction:
+from BOTTOM LEFTIGHT to TOP RIGHT.
+*/
+.box8{
+    border: 1px solid black;
+    height: 200px;
+    width: 150px;
+    margin-bottom: 30px;
+    background-image: linear-gradient(to top right,purple,yellow);
+}
+
+/*In box9, we have applied linear gradient using background-image: linear-gradient(to bottom,rgb(0,0,255,0), rgb(0,255,0,2));
+It means we are shifting the color from rgb(0,0,255,0) with 0 opacity to rgb(0,255,0,2) with 2 opacity
+in the bottom direction.The last arg indicates OPACITY
+*/
+.box9{
+    border: 1px solid black;
+    height: 200px;
+    width: 150px;
+    margin-bottom: 30px;
+    background-image: linear-gradient(to bottom,rgb(0,0,255,0), rgb(0,255,0,2));
+}
+
+/*Here we are using 3 colors and the colors are shifting from red -> yellow->blue in the direction 
+from left to right*/
+.three{
+    border: 1px solid black;
+    height: 200px;
+    width: 150px;
+    margin-bottom: 30px;
+    font-weight: bolder;
+    font-style: italic;
+    background-image: linear-gradient(to right, red,yellow,blue);
+}

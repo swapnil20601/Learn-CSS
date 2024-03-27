@@ -1,0 +1,29 @@
+/*We can add shadow to text using text-shadow as follows:
+    text-shadow: width, height, blury-effect, color;
+*/
+
+.h1{
+    font-size: 40px;
+    text-shadow: 3px 3px 5px red;
+}
+
+/*
+we can also add multiple shadow in same text as follows:
+    text-shadow: width, height, blury-effect, color, width, height, blury-effect, color
+*/
+
+.multiple-shadows{
+    font-size: 40px;
+    text-shadow: 3px 3px 5px red, 8px 6px 8px green;
+}
+/*
+You can also give the effect of border around the text using text-shadow attribute as follows:
+*/
+.fun {
+    font-size: 50px;
+  color: white; /* set text color */
+  text-shadow: 1px 1px 0 blue, 
+               -1px -1px 0 blue, 
+               1px -1px 0 blue, 
+               -1px 1px 0 blue;
+}

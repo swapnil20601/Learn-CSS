@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    button:hover {
+      color: red;
+      font-size: large;
+      cursor: grab;
+    }
+
+    a:hover {
+      color: chocolate;
+      font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+        sans-serif;
+    }
+
+    .link-color:hover {
+      color: cadetblue;
+      font-family: monospace;
+      font-size: x-large;
+    }
+
+    #link-id:hover {
+      color: green;
+      font-style: italic;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+  </style>
+  <body>
+    <!-- A CSS puesdo-class is a keyword added to a selector that specifies a special 
+    state of the selected elements. For ex: :hover can be used o change a button's color on hovering
+    the mouse pointer over it-->
+
+    <button>Submit</button>
+
+    <br />
+    <br />
+
+    <!-- Using psuedo-class selector on element -->
+    <a href="https://www.google.com" target="blank">Take me to Google</a>
+
+    <br />
+    <br />
+
+    <!-- Using psuedo-class selector on a class -->
+    <a class="link-color" href="https://www.facebook.com" target="blank"
+      >Take me to Facebook</a
+    >
+
+     <br />
+    <br />
+
+    <!-- Using psuedo-class selector on an id -->
+    <a id="link-id" href="https://www.twitter.com" target="blank"
+      >Take me to Twitter</a
+    >
+  </body>
+</html>

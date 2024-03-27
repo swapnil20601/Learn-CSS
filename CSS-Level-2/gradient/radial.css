@@ -1,0 +1,55 @@
+/*This is same as linear gradient. The only difference is colors shfited from yellow to blue
+from inwards to outwards*/
+.mydiv{
+    border: 2px solid black;
+    margin: 30px;
+    height: 300px;
+    width: 300px;
+    color:wheat;
+    font-size: large;
+    background-image: radial-gradient(yellow,blue);
+}
+/*
+We can use pass mutiple colors as argument in radial gradient just like we did in linear gradient.*/
+
+.multiple{
+    border: 2px solid black;
+    margin: 30px;
+    height: 300px;
+    width: 600px;
+    color:wheat;
+    font-size: large;
+    background-image: radial-gradient(yellow,blue,green,red);
+}
+
+/*We can also speicfy shape of gradient in radial gradient. For example, we want circular shape of gradient.
+SO just pass "circle" as 1st argument in radial gradient before passing colors
+*/
+
+.circle{
+    border: 2px solid black;
+    margin: 30px;
+    height: 300px;
+    width: 600px;
+    color:wheat;
+    font-size: large;
+    background-image: radial-gradient(circle,yellow,blue,green,red);
+}
+
+/*
+We can use color spacing;i.e; we can specify color percent in radial gradient by adding % next to colors
+*/
+.percent{
+    border: 2px solid black;
+    margin: 30px;
+    height: 300px;
+    width: 600px;
+    color:wheat;
+    font-size: large;
+    background-image: radial-gradient(yellow 10%, red 30%, orange 60%)
+}
+
+
+/*We can also use RGB color scheme in radial gradient
+We can also adjust opacity in radial gradient just like we did in linear gradient
+*/

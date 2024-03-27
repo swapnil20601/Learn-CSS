@@ -1,0 +1,60 @@
+/*
+We can see that when we set max-height = 50px, the content was overflown out of the div box.
+So we understand that if we use max-height property, then height of the element will be fixed and
+that if the content of the element goes beyond the max-height, then it will overflow.
+*/
+
+.box{
+    border: 1px solid black;
+    max-height: 50px;
+    margin-bottom: 80px;
+}
+
+/*
+We can fix this overflow issue by using overflow property as follows: 
+    overflow: scroll; 
+    or
+     overflow: auto
+*/
+
+.box1{
+    border: 1px solid black;
+    max-height: 50px;
+    overflow: scroll;
+}
+
+/*
+Similar to max-height, we can also use max-widht to control the content width wise
+*/
+
+/*
+We can see that when we set min-height = 100px, & if my content is less than min-height, 
+then it will fit perfectly within the div box and my div box will stay as it is
+*/
+
+.box2{
+    border: 1px solid black;
+    min-height: 100px;
+    margin-bottom: 80px;
+}
+
+/*
+But if my content is more than min-height, then the div box will adjust itself to fit the content
+inside it
+*/
+.box3{
+    border: 1px solid black;
+    min-height: 50px;
+    margin-bottom: 80px;
+}
+
+/*
+There are 4 values for overflow property
+    scroll
+    hidden
+    auto
+    visible
+
+    To understand how each works, check MDN. MDN has a tool to play around with it.
+    https://developer.mozilla.org/en-US/docs/Web/CSS/overflow
+*/

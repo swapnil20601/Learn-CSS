@@ -1,0 +1,74 @@
+/*We can add shadow to box using box-shadowas follows:
+    box-shadow: x-cordinate, Y-cordinate, blury-effect, color;
+*/
+
+
+.box{
+    background-color: aquamarine;
+    width: 200px;
+    height: 200px;
+    font-size: 15px;
+    box-shadow: 10px 10px 15px red;
+}
+
+/*Note: 
+For box-shadow if you dont specify any color, then it will inherit whatever is the font color.
+If font color is black then it will pick Black. If it is red, then it will pick red.
+In the following ex, we made text-color = Blue, so the box shadow will pick Blue color by default if
+you dont specify it.
+
+If you want blue color text, and lets say black color box-shadow, then you will have to explicitly
+specify the black color for box-shadow
+*/
+.box2{
+    background-color: aquamarine;
+    margin-top: 30px;
+    width: 200px;
+    height: 200px;
+    font-size: 20px;
+    color: blue;
+    box-shadow: 10px 10px 15px;
+}
+
+/*
+You can add multiple shadows in same box as follows:
+    box-shadow: x-cordinate, Y-cordinate, blury-effect, color, x-cordinate, Y-cordinate, blury-effect, color
+*/
+.box3{
+    background-color: aquamarine;
+    margin-top: 30px;
+    width: 200px;
+    height: 200px;
+    font-size: 20px;
+    box-shadow: 10px 10px 15px blue, 20px 20px 25px red;
+}
+
+/*
+You can change the position of shadow by giving negative values to X & Y cordinates of shadow
+as follows:
+*/
+.box4{
+    background-color: aquamarine;
+    margin-top: 60px;
+    margin-left: 20px;
+    width: 200px;
+    height: 200px;
+    font-size: 20px;
+    box-shadow: -10px -10px 8px orangered
+}
+
+/*
+You can can use spread-radius to tell the size of the shadow.
+It represents how much should the shadow spread or in other words it means how much does the shadow
+expands in all directions. It can be -ve, +ve or 0.
+It is passed as 4th parameter to box-shadow. In following example 12px is spread-radius.
+Play around with it to see how it affects the shadow
+*/
+.box5{
+    background-color: aquamarine;
+    margin-top: 30px;
+    width: 200px;
+    height: 200px;
+    font-size: 20px;
+    box-shadow: 10px 10px 5px 12px blue;
+}
