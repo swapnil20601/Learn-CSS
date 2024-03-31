@@ -1,0 +1,33 @@
+.container{
+    height: 500px;
+    border: 2px solid green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box{
+    border: 1px solid red;
+    background-color: aqua;
+    width: 100px;
+}
+
+/*
+flex-shrink property is used to chhange the shrinking speed of the flex-items, in our case, boxes.
+
+By default, flex-shrink is 1. If you set its value to non-zero, it will shrink the flex-item with
+that speed.
+Squeeze the browser by opening inspect mode and see the results.
+See how the box1 & box 3 shirnks wrt box 2 & 4.
+If you want to apply this prooerty for all boxes, then use flex-shrink: value;
+in .box class so that it will be applied to all boxes.
+Play around with values to see the effect
+*/
+
+.box1{
+    flex-shrink: 4;
+}
+
+.box3{
+    flex-shrink: 2;
+}

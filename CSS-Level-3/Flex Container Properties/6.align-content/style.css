@@ -1,0 +1,38 @@
+.container{
+    height: 500px;
+    border: 2px solid green;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    /*
+    align-content property divides the content in rows. If you try to inspect elements and squeeze 
+    the browser window, you will notice that boxes are divided into 2 rows, 2 boxes in each row.
+    So aapke flex-items(content) ki rows ban rahi hai, unke beech ki spacing ko
+    align-content handle karta hai
+
+    Note: To see results of each value, inspect and squeeze the browser towards left
+    
+    align-content: flex-start; will place all content to the top side of the container
+    align-content: flex-end; will place all content to the bottom side of the container
+    align-content: center; will place all content in center of the container
+    align-content: space-around; will put equal spacing in between the boxes ONLY
+    align-content: space-between; will put spacing between the content i.e between the boxes
+    align-content: space-evenly; will evenly spaced  out the content i.e Tthere will be
+    equal spacing between all the boxes
+    */
+   
+    align-content: flex-start;
+    align-content: flex-end;
+    align-content: center;
+    align-content: space-around;
+    align-content: space-between;
+    align-content: space-evenly;
+}
+
+.box{
+    border: 1px solid red;
+    background-color: aqua;
+    width: 100px;
+}

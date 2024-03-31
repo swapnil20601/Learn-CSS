@@ -1,0 +1,30 @@
+.container{
+    height: 500px;
+    border: 2px solid green;
+    display: flex;
+    justify-content: space-evenly;
+
+    /* Just like justify-content property alignes content along the main axis of the container.
+    align-items property alignes content wrt the cross-axis of the container i.e wrt y-axis or
+    height of the container.*/
+
+    /*Play around with the following vlaues of align-items to see the effect by commenting others
+    and uncommeting the one you are playing with*/
+    align-items: flex-start;
+    align-items: flex-end;
+    align-items: center;
+
+     /*This is by default value of align-items*/
+    align-items: stretch; 
+    
+    /*If your content is of different sizes; here for example all boxes are of different sizes. 
+    So baseline property will align the content(Box 1, Box2, Box3, Box4) of boxes in such 
+    a way that there baseline matches*/
+    align-items: baseline;
+}
+
+.box{
+    border: 1px solid red;
+    background-color: aqua;
+    width: 50px;
+}

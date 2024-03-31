@@ -1,0 +1,37 @@
+.container{
+    height: 500px;
+    border: 2px solid green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box{
+    border: 1px solid red;
+    background-color: aqua;
+    width: 100px;
+}
+
+/*
+Using align-self propert, you can control the alignment of the specific flex-item
+*/
+
+/*Lets say I want to stretch ONLY box 1.*/
+.box1{
+    align-self: stretch;
+}
+
+/*Lets say I want to center ONLY box 2.*/
+.box2{
+    align-self: center;
+}
+
+/*Lets say I want to put ONLY box 3 at the bottom of container.*/
+.box3{
+    align-self: flex-end;
+}
+
+/*Lets say I want to place ONLY box 4 at the top of container.*/
+.box3{
+    align-self: flex-start;
+}
