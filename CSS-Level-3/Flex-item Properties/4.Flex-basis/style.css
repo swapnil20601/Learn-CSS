@@ -1,0 +1,30 @@
+.container{
+    height: 500px;
+    border: 2px solid green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box{
+    border: 1px solid red;
+    background-color: aqua;
+    /*
+    flex-basis prperty sets the width of your flex-items(boxes) to the specified value.
+    It is reponsive in nature. Meaning increase the content in the box 2 and see the result.
+    Box 2 is able to increase its width to fit in the content.
+    */
+    flex-basis: 100px;
+    /* width: 100px; */
+}
+
+/*
+IMP: 
+setting box width of 100px also increases size of all boxes to 100px. So what is the
+difference between flex-basis and width?
+--> If you increase the content and use width property, then the content wil overflow or will get
+trimmed. But  if you use flex-basis property, then the flex-item will adjust its width to fit int
+the content.
+
+Uncomment width:100px in .box class to see the results
+*/

@@ -1,0 +1,36 @@
+.container{
+    height: 500px;
+    border: 2px solid green;
+    /*display: flex; converts the container into flexbox*/
+    display: flex;
+
+    /*flex-direction: column; will place the boxes row wise i.e horizontally with respect to 
+    main axis. Main axis is the x-axis of the container i.e the width of the container
+    To see working of flex-direction: column, uncomment following whereaas comment out
+    everything else*/
+    /* flex-direction: column; */
+
+    /*flex-direction: row ; will place the boxes column wise i.e vertically with respect to
+    main axis i.e y-axis of the container i.e the height of the container. this will give similar
+    result as display: flex
+
+    To see working of flex-direction: row, uncomment following whereaas comment out
+    everything else
+    */
+    /* flex-direction: row; */
+    
+    /*It just reverses the direction of the boxes. Uncomment following as well as
+    flex-direction: row to see the result & difference between row and row-reverse*/
+
+    /* flex-direction: row-reverse; */
+
+     /*It just reverses the direction of the boxes. Uncomment following as well as
+    flex-direction: column to see the result & difference between column and column-reverse*/
+
+    /* flex-direction: column-reverse;*/
+}
+
+.box{
+    border: 1px solid red;
+    background-color: aqua;
+}

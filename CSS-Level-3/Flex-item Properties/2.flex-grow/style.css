@@ -1,0 +1,43 @@
+.container{
+    height: 500px;
+    border: 2px solid green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box{
+    border: 1px solid red;
+    background-color: aqua;
+    width: 50px;
+    /* flex-grow: 2; */
+}
+
+/*
+flex-grow property is used to increase the size of flex-items i.e all the boxes in our case.
+Default value of fles-grow is 0. If you set its value to non-zero, it will increase the size of
+all the boxes to consume all of the space in that row.
+To see the results, uncomment flex-grow: 2; in .box class
+AND
+comment out  box1 & box3 classes below
+*/
+
+
+/*
+Lets say I have use case to increase size of ONLY box 1 and box 3.
+Then you can do it as follows:
+To see results, uncomment  box1 & box3 classes below 
+AND
+comment out flex-grow: 2; in .box class
+*/
+
+
+.box1{
+    /*box 1's size will be increased by 4*/
+    flex-grow: 4; 
+}
+
+.box3{
+    /*box 3's size will be increased by 8*/
+    flex-grow: 8; 
+}

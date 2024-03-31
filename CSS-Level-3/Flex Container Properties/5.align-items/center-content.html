@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Box</title>
+</head>
+<style>
+    .container{
+        height: 500px;
+        border: 2px solid green;
+        font-size: 25px;
+
+        /*following 3 lines will put the content in the center:
+        1. display: flex initlializes flexbox
+        2. justify-content will align content along the main axis of the container i.e wrt to width 
+        or x-axis of the container
+        3. align-items property will align content wrt the cross-axis of the container i.e wrt y-axis or
+        height of the container.
+        */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        /*gap will add 20px gap between the content i.e boxes*/
+        gap: 20px;
+    }
+
+    .box{
+    border: 1px solid red;
+    background-color: aqua;
+    width: 50px;
+}
+
+</style>
+<body>
+    <!-- Emmet to create a container wrapping 4 boxes: 
+    .container>.box*4{box-$} -->
+    <div class="container">
+        <div class="box">box1</div>
+        <div class="box">box2</div>
+        <div class="box">box3</div>
+        <div class="box">box4</div>
+    </div>
+</body>
+</html>
