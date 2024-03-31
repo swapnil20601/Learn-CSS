@@ -1,0 +1,46 @@
+/*
+#D-transform is similar to normal transforms that we have learnt in transforms.html &
+transform.css. The only difference is that there we only used X & Y axes to change the way
+the element is positioned. Here we are going to include Z axis too.
+*/
+
+div{
+    height: 100px;
+    width: 100px;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: aqua;
+    border: 1px solid black;
+}
+
+/*
+While translating, we first set the perspective and then we set the perspective.
+Perspective is the distance from your eyes to the computer screen. Play around with
+the value and see what result you get. The higher the value, the bigger the box gets &
+lesser the value, the smaller the box gets.
+
+then we set the translateZ() property to -5px. It changes the way the box look on Z-axis
+It zooms or zooms out the Box on Z-AXIS. If youpass +ve value to translateZ() then it will zoom in & the box could 
+go out of screen making it unseen. If you pass -ve value to translateZ() then it will zoom out & the 
+box will get smaller as you increase -ve value
+*/
+.translated{
+    transform: perspective(15px) translateZ(-5px);
+}
+
+/*
+It changes the way the box looks on Z-axis using scaleZ(factor). Using rotate() we can ONLY rotate the box 
+but we cannot see how it looks from different angles along Z-axis.
+Just play around with the values and see how different shapes and results you get
+meaning how the box looks from difference perspective if you scale it to a certain factor of x
+
+Note: But to see changes in the shape of box from different perspective, we have to set the
+perspective() property and using scaleZ(). Otherwise you cannot see box from different angles.
+To see the difference with or without perspective(), uncomment the other transform property
+& comment out the transform with perspective() one. 
+*/
+.scaled{
+    margin: 50px;
+    transform: perspective(200px) scaleZ(2) rotateZ(10deg) rotateX(45deg) rotateY(30deg);
+    /* transform: rotateZ(40deg); */
+}
