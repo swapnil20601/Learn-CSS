@@ -1,17 +1,17 @@
-.container{
-    height: 500px;
-    border: 2px solid green;
-    display: flex;
+.container {
+  height: 500px;
+  border: 2px solid green;
+  display: flex;
 
-    /*
+  /*
     It is nothing but short hand notation of writing flex-direction and flex-wrap in 1 line.
     For eg: flex-flow: row wrap;
     Here we have set flex-direction as row and flex-wrap as wrap in just 1 line. That's it
     */
-    flex-flow: row wrap;
+  flex-flow: row wrap;
 }
 
-.box{
-    border: 1px solid red;
-    background-color: aqua;
+.box {
+  border: 1px solid red;
+  background-color: aqua;
 }

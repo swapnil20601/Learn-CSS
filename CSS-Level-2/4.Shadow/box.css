@@ -2,13 +2,12 @@
     box-shadow: x-cordinate, Y-cordinate, blury-effect, color;
 */
 
-
-.box{
-    background-color: aquamarine;
-    width: 200px;
-    height: 200px;
-    font-size: 15px;
-    box-shadow: 10px 10px 15px red;
+.box {
+  background-color: aquamarine;
+  width: 200px;
+  height: 200px;
+  font-size: 15px;
+  box-shadow: 10px 10px 15px red;
 }
 
 /*Note: 
@@ -20,41 +19,41 @@ you dont specify it.
 If you want blue color text, and lets say black color box-shadow, then you will have to explicitly
 specify the black color for box-shadow
 */
-.box2{
-    background-color: aquamarine;
-    margin-top: 30px;
-    width: 200px;
-    height: 200px;
-    font-size: 20px;
-    color: blue;
-    box-shadow: 10px 10px 15px;
+.box2 {
+  background-color: aquamarine;
+  margin-top: 30px;
+  width: 200px;
+  height: 200px;
+  font-size: 20px;
+  color: blue;
+  box-shadow: 10px 10px 15px;
 }
 
 /*
 You can add multiple shadows in same box as follows:
     box-shadow: x-cordinate, Y-cordinate, blury-effect, color, x-cordinate, Y-cordinate, blury-effect, color
 */
-.box3{
-    background-color: aquamarine;
-    margin-top: 30px;
-    width: 200px;
-    height: 200px;
-    font-size: 20px;
-    box-shadow: 10px 10px 15px blue, 20px 20px 25px red;
+.box3 {
+  background-color: aquamarine;
+  margin-top: 30px;
+  width: 200px;
+  height: 200px;
+  font-size: 20px;
+  box-shadow: 10px 10px 15px blue, 20px 20px 25px red;
 }
 
 /*
 You can change the position of shadow by giving negative values to X & Y cordinates of shadow
-as follows:
+as follows: This will make shadow to appear on left side of the box
 */
-.box4{
-    background-color: aquamarine;
-    margin-top: 60px;
-    margin-left: 20px;
-    width: 200px;
-    height: 200px;
-    font-size: 20px;
-    box-shadow: -10px -10px 8px orangered
+.box4 {
+  background-color: aquamarine;
+  margin-top: 60px;
+  margin-left: 20px;
+  width: 200px;
+  height: 200px;
+  font-size: 20px;
+  box-shadow: -10px -10px 8px orangered;
 }
 
 /*
@@ -64,11 +63,11 @@ expands in all directions. It can be -ve, +ve or 0.
 It is passed as 4th parameter to box-shadow. In following example 12px is spread-radius.
 Play around with it to see how it affects the shadow
 */
-.box5{
-    background-color: aquamarine;
-    margin-top: 30px;
-    width: 200px;
-    height: 200px;
-    font-size: 20px;
-    box-shadow: 10px 10px 5px 12px blue;
+.box5 {
+  background-color: aquamarine;
+  margin-top: 30px;
+  width: 200px;
+  height: 200px;
+  font-size: 20px;
+  box-shadow: 10px 10px 5px 15px blue;
 }

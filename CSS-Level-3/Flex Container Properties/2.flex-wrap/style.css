@@ -1,22 +1,24 @@
-.container{
-    height: 400px;
-    border: 2px solid green;
-    display: flex;
-    /*It will squeeze the boxes to fit the container as you minimize the broswer window
+.container {
+  height: 400px;
+  border: 2px solid green;
+  display: flex;
+  /*It will squeeze the boxes to fit the container as you minimize the broswer window
     To see the results, do Ctrl_Shfit + I and drag window to left side as much as you can.
-    You will se that boxes shift on the next line to fit themselves in the container.
+    You will see that boxes try to squeeze in and move on the next line to fit themselves in the container.
     But not beyond 50px as you have set box width to 50px
     
-    Note: To see results, comment flex-wrap: nowrap code line
+    Note: To see results, uncomment flex-wrap: wrap
     */
-    flex-wrap: wrap;
+  /* flex-wrap: wrap; */
 
-    /*Here the boxes will squeeze but they will not shift on the next line as they are squeezed to 50px */
-    flex-wrap: nowrap;
+  /*Here the boxes will squeeze but they will not shift on the next line as they are squeezed to 50px
+   Note: To see results, uncomment flex-wrap: nowrap
+  */
+  /* flex-wrap: nowrap; */
 }
 
-.box{
-    border: 1px solid red;
-    background-color: aqua;
-    width: 50px;
+.box {
+  border: 1px solid red;
+  background-color: aqua;
+  width: 50px;
 }
