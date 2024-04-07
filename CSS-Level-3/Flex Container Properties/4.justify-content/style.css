@@ -1,37 +1,37 @@
-.container{
-    height: 500px;
-    border: 2px solid green;
-    display: flex;
-    /*justify-content property alignes content along the main axis i.e wrt to width or x-axis   
+.container {
+  height: 500px;
+  border: 2px solid green;
+  display: flex;
+  /*justify-content property alignes content along the main axis i.e wrt to width or x-axis   
     of the container.*/
 
-    /*justify-content: flex-start; will place all content to the left side of the container*/
-    justify-content: flex-start;
+  /*justify-content: flex-start; will place all content to the left side of the container*/
+  justify-content: flex-start;
 
-    /*justify-content: flex-end; will place all content to the right side of the container*/
-    justify-content: flex-end;
+  /*justify-content: flex-end; will place all content to the right side of the container*/
+  justify-content: flex-end;
 
-    /*justify-content: center; will place all content in center of the container*/
-    justify-content: center;
+  /*justify-content: center; will place all content in center of the container*/
+  justify-content: center;
 
-    /*justify-content: space-around; will put equal spacing in between the boxes ONLY 
+  /*justify-content: space-around; will put equal spacing in between the boxes ONLY 
     AND
     NOT AFTER THE LAST BOX or BEFORE THE FIRST BOX*/
-    justify-content: space-around;
+  justify-content: space-around;
 
-     /*justify-content: space-around; will evenly spaced  out the content i.e Tthere will be
+  /*justify-content: evenly; will evenly spaced  out the content i.e There will be
      equal spacing between all the boxes AND ALSO AFTER THE LAST BOX &
      BEFORE THE FIRST BOX*/
-    justify-content: space-evenly;
+  justify-content: space-evenly;
 
-    /*justify-content: space-between; will put spacing between the content i.e between the boxes 
+  /*justify-content: space-between; will put spacing between the content i.e between the boxes 
     The box-1 will touch left side of container completely and the box-4 will touch right side
     of container completely*/
-    justify-content: space-between;
+  justify-content: space-between;
 }
 
-.box{
-    border: 1px solid red;
-    background-color: aqua;
-    width: 50px;
+.box {
+  border: 1px solid red;
+  background-color: aqua;
+  width: 50px;
 }

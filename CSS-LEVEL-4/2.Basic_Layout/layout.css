@@ -1,0 +1,58 @@
+/*
+Basic Layout: 
+    - I want Box 1 to be header
+    - I want Box 4 to be footer.
+    - I want Box 2 to be Navigaton Pane 
+    - I want Box 3 to be main content
+    - I want Box 5 to be sidebar
+*/
+.container{
+    background-color: brown;
+    height: 500px;
+    border: 2px solid black;
+    display: grid;
+    /*
+    Why set 1st & 5th column to 150px explicitly and other 3 columns equal in width i.e 1fr?
+    Bcoz I want Box 2 & Box 3 to be smaller in width(column-wise) than Box 3. And want Box 3 to take
+    all other remaining width(column-wise) i.e from column 2 to column 4
+    */
+    grid-template-columns: 150px 1fr 1fr 150px;
+
+    /*
+    Why set 1st & last row to 50px explicitly and row 2nd & 3rd equal in width i.e 1fr?
+    Bcoz I want Box 1 & Box 4 to be smaller in width(row-wise) than Box 3 & Box 2. 
+    And want Box 3 & Box 2 to take all other remaining width(row-wise).
+    */
+    grid-template-rows: 50px 1fr 1fr 50px;
+    gap: 6px;
+
+}
+
+.box{
+    background-color: aqua;
+    border: 2px solid black;
+}
+
+#box1,#box4{
+    grid-column-start: 1;
+    grid-column-end: 5;
+
+    /*Short hand notation to achieve above task:
+        grid-column: 1 / 5;
+    */
+}
+
+#box2{
+    grid-row-start: 2;
+    grid-row-end:4;
+    /*Short hand notation to achieve above task:
+    grid-column: 2 / 4;
+*/
+}
+
+#box3{
+    grid-column-start: 2;
+    grid-column-end:4;
+    grid-row-start: 2;
+    grid-row-end: 4;
+}

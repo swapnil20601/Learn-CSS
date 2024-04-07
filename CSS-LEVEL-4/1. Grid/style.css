@@ -1,0 +1,101 @@
+/* *{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+} */
+
+.container{
+    background-color: brown;
+    height: 500px;
+    border: 2px solid black;
+
+    /*display: grid; converts the container into Grid
+    Inspect element over container. You will see the dotted lines representing rows & columns & creating boxes
+    */
+    display: grid;
+
+    /*This will create 4 columns (dotted) within the GRID with the spacing of 200px 100px 400px 300px.
+    All the boxes will be placed in these grids. INSPECT ELEEMENT OVER CONTAINER TO SEE THE GRID
+    1. Box 1 in 1st Grid of 200px
+    2. Box 2 in 2nd Grid of 100px
+    3. Box 3 in 3rd Grid of 400px
+    4. Box 4 in 4th Grid of 300px
+    5. Box 5 in 5th Grid of 200px again which is basically 2nd row
+
+    Comment the following line of code 
+            grid-template-columns: 1fr 1fr 1fr;
+     to see the results
+    */
+    grid-template-columns:  200px 100px 400px 300px;
+
+    /*This will create 4 rows (dotted) within the GRID with the spacing of 100px 100px 100px 100px.
+    All the boxes will be placed in these grids. INSPECT ELEEMENT OVER CONTAINER TO SEE THE GRID
+    Boxes 1 - 4 will be placed in 1st row & Box 5 will be placed in 2nd row
+    */
+    grid-template-rows: 100px 100px 100px 100px;
+
+    /*
+    This is similar to above grid-template-columns:  200px 100px 400px 300px. The only difference is that
+    in above case we were setting the size of Grids in pixels. This WILL NOT make the boxes responsive if you
+    pen this html file in Mobile. If order to make it responsive AND CREATE GRID OF EQUAL SIZES,
+     use unit: fr in grid-template-columns as follows. 
+    */
+
+    grid-template-columns: 1fr 1fr 1fr;
+
+    /*
+    You can also write the same as grid-template-rows: 1fr 1fr 1fr; as follows using repeat() function
+        grid-template-columns: repeat(4, 1fr);
+
+    Lets say you want 1st Grid to be 100px and other 3 of 2fr, thenu can also combine repeat() and 
+    single value as follows:
+    
+    grid-template-columns: 100px repeat(3, 2fr);*/
+
+    /*You can use same ruls & units to create grid-template-rows too*/
+    grid-template-rows: 100px 80px repeat(2, 2fr);
+    
+    /*This will create a gap of 15px between rows & columns of the GRID. 
+    INSPECT ELEMENT TO SEE THE GRID*/
+    gap: 15px;
+
+}
+
+.box{
+    background-color: aqua;
+    border: 2px solid black;
+    width: 80px; 
+    height: 80px;
+}
+
+
+/*
+If you want the size of Box 1 to expand for upto 2 columns, then you can use 
+grid-column-start: 1
+grid-column-end: 3
+
+By doing this Box 1 will take up size of 2 columns. Also notice that all other boxes shifted rightwards from
+their original position.
+
+To see it working comment the width property in .box class above
+*/
+#box1{
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+/*
+Just like above, we can also expland size of box row sie. Lets say we want size of Box 3 to 
+expand upto 2 rows. Then we can use
+ grid-row-start: 2 
+ grid-row-end: 4 
+
+By doing this Box 3 will take up size of 2 rows. Also notice that all other boxes shifted rightwards from
+their original position.
+
+To see it working comment the height property in .box class above
+*/
+#box3{
+    grid-row-start: 2;
+    grid-row-end: 4;
+}

@@ -1,6 +1,6 @@
-/*transfqrm will move the content horizontally and vertically 
+/*transform will move the content horizontally and vertically 
 transform: translate(70px,120px) :- will move the content 70px in x-axis and 120px in y-axis i.e
-70px to  right sode amd 120px downwards
+70px towards right side amd 120px downwards
 
 If you just want to move conent horizontally i.e to left or right, then use:
 `transform: translateX(70px)`
@@ -9,20 +9,20 @@ If you just want to move conent vertically i.e up or down, then use:
 `transform: translateY(120px)`
 
 */
-.box{
-    background-color: aqua;
-    transform: translate(70px,120px);
-    margin-bottom: 300px;
+.box {
+  background-color: aqua;
+  transform: translate(70px, 120px);
+  margin-bottom: 300px;
 }
 
 /*This will rotate the content by 60 degrees in clockwise direction. If you pass -ve value to rotate()
 then it will rotate the content anti-clockwise.*/
-.box2{
-    background-color: aquamarine;
-    transform: rotate(60deg);
-    /* transform: rotate(-45deg); */
-    text-align: center;
-    margin-bottom: 100px;
+.box2 {
+  background-color: aquamarine;
+  transform: rotate(60deg);
+  /* transform: rotate(-45deg); */
+  text-align: center;
+  margin-bottom: 100px;
 }
 
 /*
@@ -31,26 +31,26 @@ scale(1,5) : will zoom in ad zoom out the content based on x & y axis values you
 The higher the value you provide for x-axis, the more zoomed out the content will be in horizontal
 direction. The higher the value you provide for y-axis, the more zoomed out the content 
 will be in vertical direction.
-You can also scale the content horizontally just by using scaleX() and vertically by using   scaleY()
+You can also scale the content horizontally just by using scaleX() and vertically by using scaleY()
 */
-.box3{
-    background-color: aqua;
-    margin:100px;
-    /* transform: scale(1  ,4); */
-    transform: scaleY(3);
+.box3 {
+  background-color: aqua;
+  margin: 100px;
+  /* transform: scale(1, 5); */
+  transform: scaleY(3);
 }
 
 /*
 transform: skew(-45deg): It will tilt the content by 45 degrees towards right direction. If you
-the content to be tilter towards left direction then pass -ve value to skew().
+want the content to be tilted towards left direction then pass -ve value to skew().
 Eg: transform: skew(-45deg);
 */
-.box4{
-    background-color: aqua;
-    margin:200px;
-    font-size: 30px;
-    transform: skew(45deg);
-    /* transform: skew(-30deg); */
+.box4 {
+  background-color: aqua;
+  margin: 200px;
+  font-size: 30px;
+  transform: skew(45deg);
+  /* transform: skew(-30deg); */
 }
 
 /*

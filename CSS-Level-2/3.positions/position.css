@@ -1,62 +1,60 @@
-div{
-    width:200px;
-    height: 200px;
-    background-color: aqua;
-    border: 2px solid black;
-    border: 2px solid black;
-    font-size: 30px;
-    font-weight: bold;
-    display: inline-block;
+div {
+  width: 200px;
+  height: 200px;
+  background-color: aqua;
+  border: 2px solid black;
+  font-size: 30px;
+  font-weight: bold;
+  display: inline-block;
 }
 
-.container{
-    height: 1200px;
-    background-color: beige;
-    width: 100vw;
+.container {
+  height: 1200px;
+  background-color: beige;
+  width: 100vw;
 }
 /*
 The default position of an element in CSS is always static. 
 position: relative : It means that the element is positioned relative to its normal position. It means
-that whatever was the element's static position, it will change to the realtive position
+that whatever was the element's static position, it will change to the relative position
 For example:The C box will be shifted 100px downwards from top and 100px towards right from left
 because we are saying its position is relative.
 But if you remove the top and left properties, then it will be move back to its statis or original 
-position. Try remvoving the top and left properties and see the result.
+position. Try removing the top and left properties and see the result.
 
 Note: To position any element relative to its static/original position, we have to use top/left/right/
 bottom properties.
 */
 
-.box3{
-    position: relative;
-    top:100px;
-    left: 100px;
+.box3 {
+  position: relative;
+  top: 100px;
+  left: 100px;
 }
-
 
 /*
 It will position the element relative to the VIEWPORT, which means it will always stay in the same place
-even if you scroll. To position this element anywnere on the viewpoert, use top/left/right/bottom properties
+even if you scroll. To position this element anywhere on the viewpoert, use top/left/right/bottom properties
 For example: You will notice that Box A will always stay at the same place even if you scroll down the
-page as we are saying its position is relative.
+page as we are saying its position is fixed.
 Uncomment the position property and see the result
-Box A will start scrolling
+Box A will start scrolling along with the page
 */
-.box1{
-    /* position: fixed; */
+.box1 {
+  /* position: fixed; */
 }
 
 /*
-An element psotiioned ast sticky toggless between rrelative and fixed positioned element, depending
+An element positioned as sticky toggless between relative and fixed positioned element, depending
 upon the scrol position. 
 
 For example:Box D will be sticky to the top of the page. But if you scroll page down then you 
 will see that there is a 10px gap from top of the page. But when you scroll all the way to
-top of the agen, the gap will be removed and it sticks to the viewport
+top of the page, the gap will be removed and it sticks to the viewport
 */
-.box4{
-    position: sticky;
-    top:10px
+.box4 {
+  position: sticky;
+  top: 10px;
 }
 
 /*
@@ -83,8 +81,8 @@ right from left of the container.
 
 Note: Absolute positioned elements are removed from normal flow and can overland other elements.
 */
-.box3{
-    position: absolute;
-    top: 120px;
-    left:150px;
+.box3 {
+  position: absolute;
+  top: 120px;
+  left: 150px;
 }

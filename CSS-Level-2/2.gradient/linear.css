@@ -31,7 +31,7 @@ It means that the color will smoothly shift from magenta to chcocolate from dire
     background-image: linear-gradient(to left,magenta,chocolate);
 }
 
-/*In box4, we have applied linear gradient using background-image: linear-gradient(red,green).
+/*In box4, we have applied linear gradient using background-image: linear-gradient(yellow,green).
 It means that the color will smoothly shift from yellow to green from direction: top to bottom.
 Top to Bottom is the defaut direction. Notice that we have not passed 1st arg to liner-gradient().
 We have just passed yellow and green. So by default it will take "to top" as 1st argument.*/
